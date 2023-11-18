@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Use viewport height to cover the full screen */
+    display: flex;
+    flex-direction: column;
+    color: #FFDD00;
+    overflow: hidden; /* Disable scrolling */
+}
+
+.header, footer {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 0px;
+    background-color: #001489;
+    color: #FFDD00;
+    width: 100%;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+span {
+    font-size: 12px;
+}
+
+main {
+    flex-grow: 1; /* Allow main to fill the available space */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #001489;
+}
+
+#clock {
+    font-size: 4em;
+    padding: 20px;
+    border: 1px solid #001489;
+    border-radius: 10px;
+    background-color: #001489;
+}
+
+#circle-words {
+    position: absolute;
+    width: 400px; 
+    height: 400px; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 400px; /* Adjust to match height */
+}
+
+.word {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform-origin: center;
+    transform: rotate(0deg) translate(0px); /* Initial rotation */
+    font-size: 2em;
+}
+
+/* You'll need to add specific rotations for each word */
+.word:nth-child(1) {
+    transform: rotate(0deg) translate(200px); /* Adjust the rotation and translation */
+}
+.word:nth-child(2) {
+    transform: rotate(30deg) translate(200px); /* Adjust as needed */
+}
+.word:nth-child(3) {
+    transform: rotate(60deg) translate(200px); 
+}
+.word:nth-child(4) {
+    transform: rotate(90deg) translate(200px); 
+}
+.word:nth-child(5) {
+    transform: rotate(120deg) translate(200px); 
+}
+.word:nth-child(6) {
+    transform: rotate(150deg) translate(200px);
+}
+.word:nth-child(7) {
+    transform: rotate(180deg) translate(200px); 
+}
+.word:nth-child(8) {
+    transform: rotate(210deg) translate(200px); 
+}
+.word:nth-child(9) {
+    transform: rotate(240deg) translate(200px);
+}
+.word:nth-child(10) {
+    transform: rotate(270deg) translate(200px); 
+}
+.word:nth-child(11) {
+    transform: rotate(300deg) translate(200px); 
+}
+.word:nth-child(12) {
+    transform: rotate(330deg) translate(200px); 
+}
+
+
+span {
+    font-size: 12px; 
+}
+
+
+
+

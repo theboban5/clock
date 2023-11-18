@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 cet clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <p><b>cet clock</b><em> - what time is it?</em></p>
+        </header>
+    </div>
+
+    <main>
+
+        <div id="circle-words">
+            <span class="word">berlin</span>
+            <span class="word">madrid</span>
+            <span class="word">roma</span>
+            <span class="word">bucurești</span>
+            <span class="word">paris</span>
+            <span class="word">wien</span>
+            <span class="word">hamburg</span>
+            <span class="word">warszawa</span>
+            <span class="word">budapest</span>
+            <span class="word">barcelona</span>
+            <span class="word">münchen</span>
+            <span class="word">praha</span>
+        </div>
+        <div id="clock"></div>   
+        <script> // javascript //
+            function updateTime() {
+                var now = new Date();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+                var timeString = hours + ':' + minutes + ':' + seconds;
+                document.getElementById('clock').textContent = timeString;
+            }
+        
+            setInterval(updateTime, 1000); // Update the time every second
+            updateTime(); // Initial call to display time immediately
+        </script>
+    
+    </main>
+
+</body>
+
+    <footer>
+        <p>made with <span>❤️</span> on the internet</p>
+    </footer>        
+
+
+</html>
